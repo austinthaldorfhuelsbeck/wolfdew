@@ -8,16 +8,22 @@ body {
 
 .App-header {
   text-align: center;
-  background-color: #5b417a;
+  /* background-color: #5b417a; */
+  background-color: #f6f7fb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
 }
 
 .App-link {
   color: #9276b5;
+}
+
+.logo {
+  height: 45px;
+  margin-top: -4px;
 }
