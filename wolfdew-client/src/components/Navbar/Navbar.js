@@ -22,7 +22,7 @@ export default function NavBar() {
       </div>
       <ul className={toggle ? "nav-menu active" : "nav-menu"}>
         <li>
-          <h5 className="nav-link">
+          <h5 className="nav-link brand-color">
             Help & Support <i className="fas fa-caret-down"></i>
           </h5>
         </li>
