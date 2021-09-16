@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-import { MenuItems } from "../MenuItems"
 import "./Navbar.css"
 
 export default function NavBar() {
@@ -22,15 +21,16 @@ export default function NavBar() {
         <i className={toggle ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       <ul className={toggle ? "nav-menu active" : "nav-menu"}>
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <a className={item.cName} href={item.url}>
-                {item.title}
-              </a>
-            </li>
-          )
-        })}
+        <li>
+          <h5 className="nav-link">
+            Help & Support <i className="fas fa-caret-down"></i>
+          </h5>
+        </li>
+        <li>
+          <h5 className="nav-link">
+            USER_NAME <i className="fas fa-caret-down"></i>
+          </h5>
+        </li>
       </ul>
     </nav>
   )
